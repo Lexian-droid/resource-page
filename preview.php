@@ -6,29 +6,6 @@
 <head>
   <title>Preview - <?php echo TITLE ?></title>
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .preview-container {
-      margin: 0 auto;
-      max-width: 500px;
-      padding: 10px;
-      border: 1px solid #ddd;
-    }
-    img {
-      max-width: 100%;
-	}
-	video {
-		max-width: 100%;
-    }
-    .download-button, .back-button {
-      display: block;
-      margin: 10px auto;
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-    }
-  </style>
 </head>
 <body>
   <h1>Preview</h1>
