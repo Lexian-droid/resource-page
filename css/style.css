@@ -34,7 +34,30 @@ a:hover {
   display: block;
   margin: 0 auto;
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.preview-container {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+img {
+  max-width: 100%;
+}
+video {
+  max-width: 100%;
+}
+.download-button,
+.back-button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #4caf50;
   color: white;
   text-decoration: none;
   border-radius: 4px;
