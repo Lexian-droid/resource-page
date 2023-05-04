@@ -2,7 +2,7 @@
 	require("./config.php");
 ?>
 <?php
-  $original_dir = 'files/';
+  $original_dir = BASE_DIR;
   $dir = isset($_GET['dir']) ? $_GET['dir'] : $original_dir; // get the directory from the URL or use the default
   $files = scandir($dir); // scan the directory and get the file list
 ?>
