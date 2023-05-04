@@ -27,11 +27,11 @@
             echo '<li><a href="?dir=' . $dir . $file . '/">' . $file . '</a></li>';
           } else {
             $ext = pathinfo($file, PATHINFO_EXTENSION);
-            if(in_array($ext, ['txt', 'jpg', 'jpeg', 'png', 'gif'])) {
-              echo '<li><a href="preview.php?file=' . $dir . $file . '">' . $file . '</a></li>';
-            } else {
-              echo '<li><a href="' . $dir . $file . '">' . $file . '</a></li>';
-            }
+		if(in_array($ext, ['txt', 'doc', 'docx', 'pdf', 'jpg', 'jpeg', 'png', 'gif', 'bmp', 'tiff', 'mp4', 'webm', 'ogg'])) {
+		  echo '<li><a href="preview.php?file=' . $dir . $file . '">' . $file . '</a></li>';
+		} else {
+		  echo '<li><a href="' . $dir . $file . '">' . $file . '</a></li>';
+		}
           }
         }
       }
