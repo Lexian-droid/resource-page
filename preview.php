@@ -18,17 +18,11 @@ require "./config.php"; ?>
      } elseif (in_array($ext, ["jpg", "jpeg", "png", "gif", "bmp", "tiff"])) {
          echo '<img src="' . $file . '">';
      } elseif (in_array($ext, ["mp4", "webm", "ogg"])) {
-         echo '<video controls><source src="' .
-             $file .
-             '" type="video/' .
-             $ext .
-             '">Your browser does not support the video tag.</video>';
+         echo '<video controls><source src="' . $file . '" type="video/' . $ext . '">Your browser does not support the video tag.</video>';
      } else {
          echo "Unsupported file format";
      }
-     echo '<a class="download-button" href="' .
-         $file .
-         '" download>Download</a>';
+     echo '<a class="download-button" href="' . $file . '" download>Download</a>';
  } else {
      echo "No file specified";
  } ?>
