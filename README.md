@@ -12,7 +12,7 @@ To set up Resource Page, you need a web server that supports PHP, such as Apache
 ```php
 <?php
 define('TITLE', 'Lexian Resources'); // The name of your website
-define('BASE_DIR', './files'); // The directory you want to publicly display
+define('BASE_DIR', './files/'); // The directory you want to publicly display
 define('HOSTNAME', implode('.', array_slice(explode('.', $_SERVER['HTTP_HOST']), -2))); // Automatically populated, don't touch
 ?>
 ```
